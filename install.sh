@@ -4,7 +4,7 @@
 sudo pacman -Syu
 
 # Install needed packages
-sudo pacman -S zsh kitty bluez bluez-utils blueman volumeicon ly nnn
+sudo pacman -S zsh kitty bluez bluez-utils blueman pasystray ly nnn xorg-xbacklight
 
 ######### Set zsh as default shell ############
 
