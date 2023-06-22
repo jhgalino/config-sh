@@ -12,7 +12,7 @@ compinit
 # End of lines added by compinstall
 
 # Add hx as default editor
-export EDITOR=/usr/bin/hx
+export EDITOR=vim
 export TERMINAL=kitty
 export BROWSER=firefox
 
@@ -27,5 +27,4 @@ alias pkg_size="expac -H M '%m\t%n' | sort -h"
 eval "$(starship init zsh)"
 export GPG_TTY=$(tty)
 
-# Following line was automatically added by arttime installer
-export PATH=/home/jhgalino/projects/arttime/bin:$PATH
+
