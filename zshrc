@@ -20,11 +20,10 @@ export BROWSER=firefox
 export PATH=$PATH:~/AB_Scripts
 
 alias ls='ls --color=auto'
+alias vim='nvim'
 
 # Package sizes
 alias pkg_size="expac -H M '%m\t%n' | sort -h"
 
 eval "$(starship init zsh)"
 export GPG_TTY=$(tty)
-
-

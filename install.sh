@@ -4,8 +4,7 @@
 sudo pacman -Syu
 
 # Install needed packages
-sudo pacman -S zsh kitty bluez bluez-utils blueman pasystray \ 
-  ly xorg-xbacklight xsel ripgrep lazygit neovim
+sudo pacman -S zsh kitty bluez bluez-utils blueman pasystray ly xorg-xbacklight xsel ripgrep lazygit neovim starship
 
 ######### Set zsh as default shell ############
 
@@ -43,6 +42,6 @@ sudo systemctl enable bluetooth.service
 sudo systemctl enable ly.service
 
 ######### place configs in right places #######
-cp i3.config /home/$(whoami)/.config/i3/config
-cp kitty.config /home/$(whoami)/.config/kitty/kitty.conf
+mkdir /home/$(whoami)/.config/i3 && cp i3.config /home/$(whoami)/.config/i3/config
+mkdir /home/$(whoami)/.config/kitty/ && cp kitty.config /home/$(whoami)/.config/kitty/kitty.conf
 cp black-wallpaper.png /home/$(whoami)/Backgrounds/black-wallpaper.png
