@@ -4,7 +4,8 @@
 sudo pacman -Syu
 
 # Install needed packages
-sudo pacman -S zsh kitty bluez bluez-utils blueman pasystray ly xorg-xbacklight xsel ripgrep lazygit
+sudo pacman -S zsh kitty bluez bluez-utils blueman pasystray \ 
+  ly xorg-xbacklight xsel ripgrep lazygit neovim
 
 ######### Set zsh as default shell ############
 
@@ -33,6 +34,9 @@ fc-cache -f -v
 
 # Clean up the temporary directory
 rm -rf "$temp_dir"
+
+########### Install nvim config (AstroNvim) ##############
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 
 ######### Set-up services ##########
 sudo systemctl enable bluetooth.service 
