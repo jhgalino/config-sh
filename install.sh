@@ -4,7 +4,7 @@
 sudo pacman -Syu
 
 # Install needed packages
-sudo pacman -S zsh kitty bluez bluez-utils blueman pasystray ly xorg-xbacklight xsel ripgrep lazygit neovim starship
+sudo pacman -S zsh kitty bluez bluez-utils blueman pasystray ly xorg-xbacklight xsel ripgrep lazygit neovim starship xorg-xinput
 
 ######### Set zsh as default shell ############
 
@@ -45,3 +45,5 @@ sudo systemctl enable ly.service
 mkdir /home/$(whoami)/.config/i3 && cp i3.config /home/$(whoami)/.config/i3/config
 mkdir /home/$(whoami)/.config/kitty/ && cp kitty.config /home/$(whoami)/.config/kitty/kitty.conf
 cp black-wallpaper.png /home/$(whoami)/Backgrounds/black-wallpaper.png
+mkdir /home/$(whoami)/scripts && cp touchpad_toggle.sh /home/$(whoami)/scripts/touchpad_toggle.sh
+chmod +x /home/$(whoami)/scripts/touchpad_toggle.sh
