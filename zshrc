@@ -11,13 +11,13 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Add hx as default editor
+# Add vim as default editor
 export EDITOR=vim
 export TERMINAL=kitty
 export BROWSER=firefox
 
 # Add scripts path
-export PATH=$PATH:~/AB_Scripts
+export PATH=$PATH:~/AB_Scripts:~/.config/emacs/bin
 
 alias ls='ls --color=auto'
 alias vim='nvim'
